@@ -1,12 +1,28 @@
 {
-  "name": "test-semantic-release",
-  "version": "1.0.0",
+  "name": "@rwoody/test-semantic-release",
+  "version": "0.0.0-development",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node tests.js"
+    "test": "node tests.js",
+    "semantic-release": "semantic-release",
+    "commit": "npx git-cz"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rwoody/semantic-release-test.git"
+  },
+  "devDependencies": {
+    "commitizen": "^3.0.5",
+    "cz-conventional-changelog": "^2.1.0",
+    "semantic-release": "^15.12.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
